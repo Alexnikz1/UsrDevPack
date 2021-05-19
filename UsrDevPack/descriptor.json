@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "2f5a33ec-993b-05da-840a-1200d29b3b9d",
+    "Name": "UsrDevPack",
+    "ModifiedOnUtc": "\/Date(1621348052000)\/",
+    "Maintainer": "Customer",
+    "DependsOn": [
+      {
+        "UId": "d7559847-f38e-410c-baee-6f43bbe80d42",
+        "PackageVersion": "7.8.0",
+        "Name": "SalesEnterpriseSoftkey_ENU"
+      }
+    ]
+  }
+}
