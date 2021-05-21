@@ -21,7 +21,32 @@ define("UsrRealty1Page", [], function() {
 				}
 			}
 		}/**SCHEMA_DETAILS*/,
-		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
+		businessRules: /**SCHEMA_BUSINESS_RULES*/{
+			"UsrComment": {
+				"8d60f3e6-6cc3-43d1-8c88-ad57d327cfe2": {
+					"uId": "8d60f3e6-6cc3-43d1-8c88-ad57d327cfe2",
+					"enabled": true,
+					"removed": false,
+					"ruleType": 0,
+					"property": 2,
+					"logical": 0,
+					"conditions": [
+						{
+							"comparisonType": 7,
+							"leftExpression": {
+								"type": 1,
+								"attribute": "UsrPriceUSD"
+							},
+							"rightExpression": {
+								"type": 0,
+								"value": 100000,
+								"dataValueType": 5
+							}
+						}
+					]
+				}
+			}
+		}/**SCHEMA_BUSINESS_RULES*/,
 		methods: {
 			onMyButtonClick: function() {
 				this.console.log("Наша кнопка работает!");
@@ -39,38 +64,6 @@ define("UsrRealty1Page", [], function() {
 		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
-			// Метаданные для добавления на страницу пользовательской кнопки.
-            {
-                // Выполняется операция добавления компонента на страницу.
-                "operation": "insert",
-                // Мета-имя родительского контейнера, в который добавляется кнопка.
-                "parentName": "ProfileContainer",
-                // Кнопка добавляется в коллекцию компонентов
-                // родительского элемента.
-                "propertyName": "items",
-                // Мета-имя добавляемой кнопки.
-                "name": "MyButton",
-                // Свойства, передаваемые в конструктор компонента.
-                "values": {
-                   // Тип добавляемого элемента — кнопка.
-                    itemType: Terrasoft.ViewItemType.BUTTON,
-                    // Привязка заголовка кнопки к локализуемой строке схемы.
-                    caption: {bindTo: "Resources.Strings.MyButtonCaption"},
-                    // Привязка метода-обработчика нажатия кнопки.
-                    click: {bindTo: "onMyButtonClick"},
-                    // Привязка свойства доступности кнопки.
-                    enabled: {bindTo: "getMyButtonEnabled"},
-                    // Стиль отображения кнопки.
-                    "style": Terrasoft.controls.ButtonEnums.style.BLUE,
-					"layout": {
-						"colSpan": 15,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 3,
-						"layoutName": "ProfileContainer"
-					},
-                }
-            },
 			{
 				"operation": "insert",
 				"name": "UsrName2bb2d364-d18f-4f6b-8e74-a66c3fde5e05",
@@ -123,6 +116,33 @@ define("UsrRealty1Page", [], function() {
 				"parentName": "ProfileContainer",
 				"propertyName": "items",
 				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "MyButton",
+				"values": {
+					"itemType": 5,
+					"caption": {
+						"bindTo": "Resources.Strings.MyButtonCaption"
+					},
+					"click": {
+						"bindTo": "onMyButtonClick"
+					},
+					"enabled": {
+						"bindTo": "getMyButtonEnabled"
+					},
+					"style": "blue",
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 3,
+						"layoutName": "ProfileContainer"
+					}
+				},
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 3
 			},
 			{
 				"operation": "insert",
