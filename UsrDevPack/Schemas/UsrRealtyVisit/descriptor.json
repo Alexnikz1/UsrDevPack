@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "de292483-7263-491d-b9ed-5021cfc2f825",
+    "Name": "UsrRealtyVisit",
+    "ModifiedOnUtc": "\/Date(1621522811000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Просмотр недвижимости"
+  }
+}

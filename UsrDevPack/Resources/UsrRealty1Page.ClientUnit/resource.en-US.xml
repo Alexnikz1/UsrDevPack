@@ -3,6 +3,9 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Страница редактирования: &quot;Недвижимость&quot;" />
+			<Item Name="LocalizableStrings.MyButtonCaption.Value" Value="Моя кнопка!" />
+			<Item Name="LocalizableStrings.Tabafe501d3TabLabelTabCaption.Value" Value="ПРОСМОТРЫ" />
+			<Item Name="LocalizableStrings.UsrRealtyVisitDetailDetailCaptionOnPage.Value" Value="Просмотр недвижимости" />
 		</Items>
 	</Group>
 </Resources>
